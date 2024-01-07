@@ -1,0 +1,22 @@
+
+.uni_root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:  #222222;
+}
+
+.uni_center_column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  min-width: 200px;
+}
+
+.uni_codepoint_search_box {
+  margin: auto;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #ff0000;
+}
