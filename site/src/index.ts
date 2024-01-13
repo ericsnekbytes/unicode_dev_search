@@ -16,7 +16,10 @@ class UnicodeSite {
     this.rootNode.appendChild(this.centerColumn);
 
     this.codepointSearchBox = document.createElement('input');
+    this.codepointSearchBox.appearance = 'none';
     this.codepointSearchBox.classList.add('uni_codepoint_search_box');
+    this.codepointSearchBox.classList.add('root_font');
+    this.codepointSearchBox.placeholder = 'Search for a codepoint or name';
     this.centerColumn.appendChild(this.codepointSearchBox);
   }
 }
