@@ -1,36 +1,17 @@
 html {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
 
-.uni_root {
-  --uni-margin: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-
-  background-color:  #222222;
-  color: #444444;
-
-
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+::placeholder {
+  color: #888888;
 }
 
-input {
-  border: none;
-  outline: none;
-  background-color: none;
-  background-image: none;
-  box-shadow: none;
+/* Separate text styling; use for form elements
+   where text styling is not inherited */
+.uni_text {
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -38,27 +19,41 @@ input {
   font-variation-settings: "wdth" 100;
 }
 
-::placeholder {
-  color: #888888;
+#uni_layout {
+  --uni-margin: 1rem;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  background-color:  #222222;
+  color: #444444;
+
+  border: 1px solid #e77f00;
 }
 
-.uni_center_column {
-  min-height: 100%;
-  width: 30%;
-  min-width: 200px;
-  border: 1px solid #774466;
+#uni_center_column {
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+
+  width: 20rem;
+  height: 100%;
+  margin: auto;
+
+  border: 1px solid #774466;
 }
 
-.uni_codepoint_search_box {
-  width: 100%;
-  border-radius: 2px;
-  margin: auto;
-  border: 0;
+#uni_codepoint_search_box {
+  width: 30rem;
+  height: 2rem;
+
   background-color: #bbbbbb;
-  font-size: 24px;
-  align-self: stretch;
+
+  border: 1px solid #00ff2a;
+  border-radius: .1rem;
 }
