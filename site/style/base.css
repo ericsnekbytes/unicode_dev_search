@@ -30,7 +30,7 @@ html {
   background-color:  #222222;
   color: #444444;
 
-  border: 1px solid #e77f00;
+  /* border: 1px solid #e77f00; */
 }
 
 #uni_center_column {
@@ -45,7 +45,7 @@ html {
   height: 100%;
   margin: auto;
 
-  border: 1px solid #774466;
+  /* border: 1px solid #774466; */
 }
 
 #uni_codepoint_search_box {
@@ -54,6 +54,6 @@ html {
 
   background-color: #bbbbbb;
 
-  border: 1px solid #00ff2a;
+  /* border: 1px solid #00ff2a; */
   border-radius: .1rem;
 }

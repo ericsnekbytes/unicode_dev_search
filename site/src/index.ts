@@ -1,7 +1,7 @@
 // Main unicode site logic
 
 class UnicodeSite {
-  centerColumn: any;
+  centerColumn: HTMLElement;
   codepointSearchBox: any;
 
   constructor() {
