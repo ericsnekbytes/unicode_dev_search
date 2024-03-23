@@ -2,16 +2,22 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Document title</title>
+  <title>Unicode Search</title>
   <!-- >>> Google fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
   <!-- <<< Google fonts -->
   <script src="src/index.js"></script>
   <link href="style/base.css" rel="stylesheet" />
 </head>
+
 <body id="uni_layout" class="uni_text">
+  <div id="uni_title_bar"><div id="uni_marker">U+</div>Unicode search</div>
   <div id="uni_center_column">
-    <input id="uni_codepoint_search_box" class="uni_text">
+    <div id="uni_search_container">
+      <div id="upper_label">Search for a codepoint or name</div>
+      <input id="uni_codepoint_search_box" class="uni_text" />
+    </div>
   </div>
 </body>
+
 </html>

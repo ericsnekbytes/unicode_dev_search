@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
   height: 100%;
   width: 100%;
 }
@@ -11,7 +12,7 @@ input {
 }
 
 ::placeholder {
-  color: #888888;
+  color: #222;
 }
 
 /* Separate text styling; use for form elements
@@ -21,21 +22,66 @@ input {
 
   font-size: 1rem;
   font-weight: 800;
-  font-style: italic;
 }
 
 #uni_layout {
-  --uni-margin: 1rem;
   box-sizing: border-box;
 
   width: 100%;
   height: 100%;
   margin: 0;
 
-  background-color:  #222222;
+  background-color:  #333;
   color: #444444;
 
   /* border: 1px solid #e77f00; */
+}
+
+#uni_marker {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2rem;
+  margin: .5rem;
+
+  color: #ddd;
+  background-color: rgb(0, 123, 255);
+
+  border-radius: .2rem;
+
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#uni_title_bar {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 3rem;
+  margin: 0 auto 0 auto;
+
+  color: #222;
+  background-color: #ccc;
+
+  box-shadow: 0 .1rem .5rem #000;
+
+  /* border-bottom: .1rem solid #454545; */
+
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  /* font-style: italic; */
+  /* letter-spacing: .6rem; */
 }
 
 #uni_center_column {
@@ -46,18 +92,43 @@ input {
   align-items: center;
   justify-content: center;
 
-  width: 20rem;
   height: 100%;
   margin: auto;
 
   /* border: 1px solid #774466; */
 }
 
+#upper_label {
+  margin: 0 0 .5rem .5rem;
+
+  color: #bbbbbb;
+
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+#uni_search_container {
+  position: relative;
+  top: -4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid #774466; */
+}
+
 #uni_codepoint_search_box {
-  width: 30rem;
-  height: 2rem;
+  box-sizing: border-box;
+
+  flex: 0 0 2rem;
+
+  width: 25rem;
+  padding: .5rem;
 
   background-color: #bbbbbb;
+
+  box-shadow: 0px .2rem .2rem #000;
 
   /* border: 1px solid #00ff2a; */
   border-radius: .1rem;
