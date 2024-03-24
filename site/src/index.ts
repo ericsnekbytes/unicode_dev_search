@@ -8,7 +8,7 @@ class UnicodeSite {
     this.centerColumn = document.getElementById('uni_center_column');
 
     this.codepointSearchBox = document.getElementById('uni_codepoint_search_box');
-    this.codepointSearchBox.placeholder = 'U+266b, Boat, Arrow...';
+    this.codepointSearchBox.placeholder = 'U+266b, 29, Boat, Arrow...';
   }
 }
 
